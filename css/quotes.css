@@ -1,0 +1,14 @@
+#quotes {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.555);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#quotes span:first-child {
+  display: flex;
+  margin-bottom: 5px;
+  line-height: 22px;
+}

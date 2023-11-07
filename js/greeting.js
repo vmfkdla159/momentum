@@ -1,4 +1,6 @@
 const loginForm = document.querySelector("#login-form");
+const todoListTitle = document.querySelector(".todo-list-title");
+const todoListEnter = document.querySelector(".todo-list");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 const HIDDEN_CLASS = "hidden";
@@ -15,6 +17,8 @@ function onLoginSubmit(event) {
 function paintGreetings(username) {
   greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASS);
+  todoListTitle.classList.remove(HIDDEN_CLASS);
+  todoListEnter.classList.remove(HIDDEN_CLASS);
 }
 
 const savedUserName = localStorage.getItem(USERNAME);

@@ -19,9 +19,11 @@ function paintTodo(todoIVObj) {
   const li = document.createElement("li");
   li.id = todoIVObj.id;
   const span = document.createElement("span");
+  span.className = "todo-list-span";
   span.innerText = todoIVObj.Text;
   const button = document.createElement("button");
   button.innerText = "×";
+  button.className = "delete-button";
   button.addEventListener("click", deleteTodo);
   todoList.appendChild(li);
   li.appendChild(span);

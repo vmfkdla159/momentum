@@ -7,3 +7,5 @@ const bgImg = document.createElement("img");
 bgImg.src = `img/${randomImg}`;
 
 document.body.appendChild(bgImg);
+
+bgImg.className = "background-image";
