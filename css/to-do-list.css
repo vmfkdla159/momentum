@@ -7,6 +7,8 @@
 
 .todo-list {
   position: absolute;
+  display: flex;
+
   top: 29vh;
   right: 14vw;
   border: none;
@@ -17,6 +19,7 @@
 
 .todo-list-div {
   display: flex;
+  justify-content: space-between;
   transform: translate(76.2vw, 32vh);
   background-color: rgba(255, 255, 255, 0.5);
   padding: 5px 10px;
@@ -31,9 +34,7 @@
   padding: 0px;
   font-size: 25px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .todo-list-span {
